@@ -1,0 +1,7 @@
+First off, thanks for you interest!
+
+To run this project after downloading the files, please follow these steps:
+
+1. Follow the prerequisite Gatsby project setup steps provided in the README.md file (you can name the project whatever you like)
+2. Make sure to install all relevant npm packages by running `npm install` from the root of the project folder
+3. Run `gatsby develop` from the root of the project folder
