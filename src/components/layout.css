@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Lilita+One|Roboto&display=swap');
+
+:root {
+    --main-bg: #20B2AA;
+}
+
+html, 
+body {
+    background: var(--main-bg);
+    margin: 0 auto;
+}
+
+a {
+    display: inline-block;
+    padding: 1rem 2rem 1rem 0;
+    text-decoration: none;
+}
+
+.heading {
+    color: #2A5F80;
+}
+
+.container {
+    background: var(--main-bg);
+    color: #fff;
+    display: grid;
+    font-family: 'Roboto', sans-serif;
+    grid-template-columns: 1fr;
+    margin: 0 auto 3rem auto;
+    max-width: 90vw;
+    padding: 1rem;
+}
+
+.container > * {
+    max-width: 90vw;
+}
+
+.container p:first-of-type {
+    padding-top: 0.5rem;
+}
+
+.header {
+    border-bottom: 1px solid #fff;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 90vw;
+    position: sticky;
+    top: 0;
+    background: var(--main-bg);
+    z-index: 1;
+}
+
+.header-link {
+    padding-right: 0px;
+}
+
+.header-link:link,
+.header-link:visited {
+    text-align: right;
+    text-decoration: underline;
+    margin-top: 1rem;
+    padding-top: 1.25rem;
+}
+
+.header-link:active,
+.header-link:hover {
+    color: #fff;
+}
+
+.input {
+    margin: 0.5rem 1rem;
+}
+
+.input-field {
+    border-radius: 4px;
+    padding: 0.5rem;
+}
+
+.btn {
+    display: inline-block;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* 40rem = 640px */
+@media screen and (min-width: 40rem) {
+    .container {
+        grid-template-columns: auto;
+    }
+
+    .container,
+    .container > * {
+        max-width: 640px;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 70.250em = 1124px */
+@media screen and (min-width: 70.250em) {
+    .container,
+    .container > * {
+        max-width: 1140px;
+    }
+
+    .header {
+        max-width: 1140px;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
