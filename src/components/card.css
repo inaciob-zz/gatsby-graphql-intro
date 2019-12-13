@@ -1,0 +1,64 @@
+.card {
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 2px 4px 10px 0px #D3D3D3;
+    color: #404040;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 1rem;
+    transition: transform 250ms;
+    min-width: 100%;
+}
+
+.card:hover {
+    transform: scale(1.125);
+}
+
+.card-title {
+    color: #2A5F80;
+    font-size: 1.75rem;
+    margin-top: 0;
+}
+
+.card-divider {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.card-info {
+    margin-bottom: 0;
+}
+
+.card-info--label {
+    font-weight: 600;
+}
+
+.country-card--language {
+    display: block;
+    padding-bottom: 0.5rem;
+}
+
+.country-card--language:nth-child(2) {
+    margin-top: 0.5rem;
+}
+
+.country-card {
+    margin: 1rem;
+    min-width: -webkit-fill-available;
+}
+
+.card.hidden {
+    display: none;
+}
+
+/* 40rem = 640px */
+@media screen and (min-width: 40rem) {
+    .card {
+        margin: 1rem;
+        min-width: 90%;
+    }
+
+    .country-card {
+        min-width: 50%;
+    }
+}
