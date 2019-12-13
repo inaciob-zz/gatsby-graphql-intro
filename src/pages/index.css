@@ -1,0 +1,27 @@
+.main-heading {
+    font-family: 'Lilita One', cursive;
+    font-size: 4rem;
+    line-height: 4rem;
+    margin: 0;
+}
+
+.text-upper {
+    color: #FFD7A1;
+    text-transform: uppercase;
+}
+
+/* 40rem = 640px */
+@media screen and (min-width: 40rem) {
+    .main-heading {
+        font-size: 6rem;
+        line-height: 6rem;
+    }
+}
+
+/* 70.250em = 1124px */
+@media screen and (min-width: 70.250em) {
+    .main-heading {
+        font-size: 8rem;
+        line-height: inherit;
+    }
+}
